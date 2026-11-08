@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root {
+  --red:#bb0000;
+  --ink:#111113;
+  --muted:#727272;
+  --cream:#f5f3ef;
+}
+* {
+  box-sizing:border-box;
+}
+html {
+  scroll-behavior:smooth;
+}
+body {
+  margin:0;
+  font-family:'DM Sans',sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+button {
+  font:inherit;
+  cursor:pointer;
+}
+h1,h2,h3,p {
+  margin-top:0;
+}
+h1,h2,h3 {
+  font-family:'Space Grotesk',sans-serif;
+  letter-spacing:-.065em;
+}
+::selection {
+  background:#bb0000;
+  color:white;
+}
+.nav {
+  height:86px;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index:10;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 5%;
+  border-bottom:1px solid #ffffff26;
+  color:white;
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand-mark {
+  font:700 44px 'Space Grotesk';
+  letter-spacing:-.1em;
+}
+.brand-mark span,.period {
+  color:#ed2929;
+}
+.brand-text {
+  font-size:11px;
+  line-height:1.18;
+  letter-spacing:.12em;
+  font-weight:800;
+}
+.navlinks {
+  display:flex;
+  gap:34px;
+}
+.navlinks a {
+  font-size:10px;
+  letter-spacing:.13em;
+  font-weight:800;
+  transition:color .2s;
+}
+.navlinks a:hover {
+  color:#ff6666;
+}
+.nav-cta {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  border:1px solid #ffffff6b;
+  padding:14px 18px;
+}
+.nav-cta:hover {
+  background:white;
+  color:black;}
