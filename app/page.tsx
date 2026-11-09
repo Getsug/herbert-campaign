@@ -24,7 +24,7 @@ import Image from "next/image";
 // ELECTION COUNTDOWN
 // ============================================================
 
-const election = new Date("2026-11-14T08:00:00+02:00").getTime();
+const election = new Date("2026-11-14T00:00:00+02:00").getTime();
 
 function Countdown() {
   const [now, setNow] = useState<number | null>(null);
@@ -832,6 +832,7 @@ export default function Home() {
             <div>
               <span>ELECTION DAY</span>
               <strong>SATURDAY, 14 NOVEMBER 2026</strong>
+              <span>12:00 AM – 11:59 PM (RWANDA TIME)</span>
             </div>
 
             <Countdown />
