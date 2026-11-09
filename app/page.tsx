@@ -13,7 +13,12 @@ import {
   Users,
   CalendarDays,
   Share2,
+  UsersRound,
+  Award,
+  ChevronRight,
 } from "lucide-react";
+
+import Image from "next/image";
 
 // ============================================================
 // ELECTION COUNTDOWN
@@ -146,27 +151,43 @@ export default function Home() {
             <br />
             OKUTHE
           </span>
+
+          {/* <span className="reference-brand-slash"aria-hidden="true"/>
+
+          <span className="reference-brand-role">
+            FOR
+            <br />
+            COMMUNICATIONS
+            <br />
+            MINISTER
+          </span> */}
         </a>
 
         <nav
           className={menu ? "navlinks open" : "navlinks"}
           aria-label="Main navigation"
         >
+           <a onClick={() => setMenu(false)} href="#top">
+            HOME
+          </a>
+
           <a onClick={() => setMenu(false)} href="#vision">
             THE VISION
           </a>
 
           <a onClick={() => setMenu(false)} href="#initiatives">
-            THE PLAN
+            INITIATIVES
           </a>
 
           <a onClick={() => setMenu(false)} href="#commitments">
             THE COMMITMENT
           </a>
 
-          <a onClick={() => setMenu(false)} href="#about">
+           <a onClick={() => setMenu(false)} href="#about">
             ABOUT
           </a>
+
+          
         </nav>
 
         <a className="nav-cta" href="#vote">
@@ -204,19 +225,21 @@ export default function Home() {
           </div>
 
           <h1>
-            THE VOICE
+            Meet
             <br />
-            <em>OF YOUR</em>
+            <em>Herbert</em>
             <br />
             <span>
-              VISION<span className="period">.</span>
+              Okuthe<span className="period">.</span>
             </span>
           </h1>
 
           <p className="hero-description">
-            Not just announcements. <b>Connections that matter.</b>
+            This is our chance to form
             <br />
-            Opportunities that open doors. A legacy we build together.
+            <b>connections that shape our future</b>
+            <br />
+            and build a legacy together.
           </p>
 
           <div className="hero-actions">
@@ -232,7 +255,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-side">
+        {/* <div className="hero-side">
           <div className="portrait-placeholder">
             <div className="portrait-initial">
               H<span>.</span>
@@ -252,7 +275,43 @@ export default function Home() {
           <div className="side-caption">
             A DIFFERENT KIND OF COMMUNICATION.
           </div>
+        </div> */}
+
+        
+        {/* HERO CANDIDATE PORTRAIT */}
+        <div className="hero-side">
+          <div className="hero-portrait">
+            {/* Red geometric accent */}
+            <div className="hero-portrait-accent" />
+
+            {/* Red glow behind the candidate */}
+            <div className="hero-portrait-glow" />
+
+            {/* Candidate photograph */}
+            <div className="hero-portrait-photo">
+              <Image
+                src="/hero.png"
+                alt="Herbert Okuthe — Communications Minister Candidate"
+                fill
+                priority
+                sizes="(max-width: 768px) 90vw, 40vw"
+                className="hero-candidate-image"
+              />
+            </div>
+
+            {/* Candidate name overlay */}
+            {/* <div className="hero-portrait-info">
+              <span>YOUR CANDIDATE</span>
+              <h2>HERBERT OKUTHE</h2>
+              <p>THE VOICE OF YOUR VISION.</p>
+            </div> */}
+          </div>
+
+          <div className="side-caption">
+            A DIFFERENT KIND OF COMMUNICATION.
+          </div>
         </div>
+
 
         <div className="hero-bottom">
             <a href="#vision" className="scroll-indicator" aria-label="Scroll to the vision section">
@@ -260,11 +319,10 @@ export default function Home() {
                 <span className="down-arrow">↓</span>
             </a>
 
-            <span className="hero-bottom-slogan">
+            {/* <span className="hero-bottom-slogan">
                 ONE COMMUNITY. MORE POSSIBILITIES.
-            </span>
+            </span> */}
 
-          {/* <span>ONE COMMUNITY. MORE POSSIBILITIES.</span> */}
         </div>
       </section>
 
@@ -275,11 +333,11 @@ export default function Home() {
       <div className="ticker">
         <div>
             CONNECT PEOPLE <span>✳</span> OPEN DOORS <span>✳</span>{" "}
-            PRESERVE KNOWLEDGE <span>✳</span> CONNECT PEOPLE <span>✳</span>{" "}
-            OPEN DOORS <span>✳</span> PRESERVE KNOWLEDGE <span>✳</span>{""}
+            LEAVE A LEGACY <span>✳</span> CONNECT PEOPLE <span>✳</span>{" "}
+            OPEN DOORS <span>✳</span> LEAVE A LEGACY <span>✳</span>{""}
             CONNECT PEOPLE <span>✳</span> OPEN DOORS <span>✳</span>{" "}
-            PRESERVE KNOWLEDGE <span>✳</span> CONNECT PEOPLE <span>✳</span>{" "}
-            OPEN DOORS <span>✳</span> PRESERVE KNOWLEDGE <span>✳</span>{""}
+            LEAVE A LEGACY <span>✳</span> CONNECT PEOPLE <span>✳</span>{" "}
+            OPEN DOORS <span>✳</span> LEAVE A LEGACY <span>✳</span>{""}
         </div>
       </div>
 
@@ -490,7 +548,7 @@ export default function Home() {
           ABOUT HERBERT
       ===================================================== */}
 
-      <section id="about" className="section about">
+      {/* <section id="about" className="section about">
         <div className="about-index">
           04 / THE CANDIDATE
         </div>
@@ -536,7 +594,192 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section> */}
+
+      
+{/* =====================================================
+    ABOUT HERBERT — PERSONAL STORY
+===================================================== */}
+
+      <section id="about" className="about-story">
+        <div className="about-story-container">
+          <div className="about-story-grid">
+
+            {/* LEFT COLUMN: PORTRAIT AND QUOTE */}
+            <div className="about-story-left">
+
+              <div className="about-portrait-frame">
+                <div className="about-portrait-accent" />
+
+                <div className="about-portrait-mask">
+                  <img
+                    src="/herbert-profile.jpg"
+                    alt="Herbert Okuthe"
+                    className="about-portrait-image"
+                  />
+                </div>
+              </div>
+
+              <div className="about-story-quote">
+                <div className="about-quote-top">
+                  <span>WHAT DRIVES ME</span>
+                  <span className="about-quote-symbol">”</span>
+                </div>
+
+                <h3>
+                  WHEN PEOPLE FEEL INCLUDED,
+                  <em>
+                    {" "}THEY DON&apos;T JUST PARTICIPATE.
+                    THEY CONTRIBUTE.
+                  </em>
+                </h3>
+
+                <div className="about-quote-divider" />
+
+                <p>
+                  A lesson from building Campus Connect
+                  and working with international students.
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT COLUMN: PERSONAL STORY */}
+            <div className="about-story-right">
+
+              <div className="about-story-eyebrow">
+                <span>A MESSAGE FROM HERBERT</span>
+                <div />
+              </div>
+
+              <h2 className="about-story-title">
+                NO VOICE SHOULD GO{" "}
+                <em>UNHEARD.</em>
+              </h2>
+
+              <div className="about-story-body">
+                <p className="about-story-lead">
+                  When I think about communication, I don&apos;t
+                  think about posters, announcements, or social
+                  media.{" "}
+                  <strong>
+                    I think about the people who miss out simply
+                    because they didn&apos;t know where to begin.
+                  </strong>
+                </p>
+
+                <p>
+                  During my undergraduate studies, I saw
+                  international students struggling to find
+                  opportunities, connect with others, and feel
+                  part of campus life. It wasn&apos;t that they
+                  lacked ideas or ambition. Sometimes, language
+                  barriers and unfamiliar systems simply stood
+                  in their way.
+                </p>
+
+                <p>
+                  That experience inspired me and two fellow
+                  students to create{" "}
+                  <strong>Campus Connect</strong>, a platform
+                  designed to help students discover opportunities
+                  and find their place in the community.
+                </p>
+
+                <p>
+                  Watching students become more involved taught
+                  me something I&apos;ve carried with me ever
+                  since:{" "}
+                  <strong>
+                    when people feel included, they don&apos;t
+                    just participate. They contribute.
+                  </strong>
+                </p>
+
+                <p>
+                  Later, serving as my university&apos;s
+                  Honorary Ambassador reinforced that belief.
+                  I met students from different countries,
+                  cultures, and backgrounds, and learned how
+                  much we gain when everyone has a chance
+                  to be heard.
+                </p>
+
+                <p>
+                  Today, at CMU-Africa, I see a community
+                  full of talent, ideas, and experiences
+                  worth sharing.
+                </p>
+
+                <div className="about-vision-highlight">
+                  My vision is to help ensure that opportunities
+                  reach students, ideas find support, and no
+                  valuable voice is left out of our community.
+                </div>
+
+                <p>
+                  Because communication isn&apos;t just about
+                  sharing information. It&apos;s about bringing
+                  people together and making participation possible.
+                </p>
+              </div>
+
+              <div className="about-story-signature">
+                <strong>Herbert Okuthe</strong>
+                <span>The Voice of Your Vision.</span>
+              </div>
+
+              {/* MY JOURNEY */}
+              <div className="about-journey">
+                <h3>MY JOURNEY</h3>
+
+                <div className="about-journey-items">
+
+                  <div className="about-journey-item">
+                    <UsersRound aria-hidden="true" />
+                    <span>
+                      Campus Connect
+                      <br />
+                      Co-Creator
+                    </span>
+                  </div>
+
+                  <ChevronRight
+                    className="about-journey-arrow"
+                    aria-hidden="true"
+                  />
+
+                  <div className="about-journey-item">
+                    <Award aria-hidden="true" />
+                    <span>
+                      University
+                      <br />
+                      Honorary Ambassador
+                    </span>
+                  </div>
+
+                  <ChevronRight
+                    className="about-journey-arrow"
+                    aria-hidden="true"
+                  />
+
+                  <div className="about-journey-item">
+                    <GraduationCap aria-hidden="true" />
+                    <span>
+                      CMU-Africa
+                      <br />
+                      Student
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </section>
+
+
 
       {/* =====================================================
           VOTING SECTION
