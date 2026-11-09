@@ -80,13 +80,12 @@ const initiatives = [
   },
   {
     n: "02",
-    tag: "ACADEMIC CONNECTIONS",
-    icon: GraduationCap,
-    title: "Opportunities worth sharing.",
-    desc: "Use academic networks to surface potential PhD openings, faculty contacts, and pathways for students considering research careers.",
-    detail:
-      "Beginning with an existing academic connection at Korea University, with further outreach to expand the network.",
-    line: "The right information can open a door.",
+    tag: "STUDENT SHOWCASE & COLLABORATION",
+    icon: Users,
+    title: "Show what you're building. Find who you're missing.",
+    desc: "Every Tartan has ideas, skills and projects worth discovering. Tartan Connect gives every student a space to showcase what they're working on, share their interests and find people who can help bring their ideas to life. No nominations, no waiting for a spotlight.",
+    detail: "An open, opt-in student showcase and collaboration platform where anyone can publish projects, highlight their skills, request collaborators and discover what fellow Tartans are building. Students can explore projects, connect with creators and join initiatives that match their interests.",
+    line: "Your work deserves to be seen. Your ideas deserve a team."
   },
   {
     n: "03",
@@ -180,7 +179,7 @@ export default function Home() {
           </a>
 
           <a onClick={() => setMenu(false)} href="#commitments">
-            THE COMMITMENT
+            IMPROVEMENTS
           </a>
 
            <a onClick={() => setMenu(false)} href="#about">
@@ -394,7 +393,7 @@ export default function Home() {
       <section id="initiatives" className="section initiatives">
         <div className="section-label light">
           <span className="red-square" />
-          02 / THE PLAN
+          02 / THE INITIATIVES
         </div>
 
         <div className="section-top">
@@ -471,7 +470,7 @@ export default function Home() {
       <section id="commitments" className="section commitments">
         <div className="section-label">
           <span className="red-square" />
-          03 / GETTING THE BASICS RIGHT
+          03 / ELEVATING GUILD COMMUNICATIONS
         </div>
 
         <div className="section-top dark">
