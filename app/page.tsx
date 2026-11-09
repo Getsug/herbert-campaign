@@ -83,7 +83,7 @@ const initiatives = [
     tag: "STUDENT SHOWCASE & COLLABORATION",
     icon: Users,
     title: "Show what you're building. Find who you're missing.",
-    desc: "Every Tartan has ideas, skills and projects worth discovering. Tartan Connect gives every student a space to showcase what they're working on, share their interests and find people who can help bring their ideas to life. No nominations, no waiting for a spotlight.",
+    desc: "Every Tartan has ideas, skills and projects worth discovering. Tartan Forge gives every student a space to showcase what they're working on, share their interests and find people who can help bring their ideas to life. No nominations, no waiting for a spotlight.",
     detail: "An open, opt-in student showcase and collaboration platform where anyone can publish projects, highlight their skills, request collaborators and discover what fellow Tartans are building. Students can explore projects, connect with creators and join initiatives that match their interests.",
     line: "Your work deserves to be seen. Your ideas deserve a team."
   },
@@ -94,8 +94,8 @@ const initiatives = [
     title: "Every class leaves a mark.",
     desc: "Create a simple, repeatable way for each graduating class to contribute something meaningful to the students who come next.",
     detail:
-      "Possibilities include a student-built idea bank, practical newcomer guides, and initiatives that elevate CMU-Africa.",
-    line: "Graduate. Give back. Leave a legacy.",
+      "Possibilities include a student-built idea bank, practical newcomer guides and initiatives that elevate CMU-Africa.",
+    line: "Leave a legacy.",
   },
 ];
 
