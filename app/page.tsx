@@ -499,10 +499,10 @@ export default function Home() {
               deadlines and what is happening across the Guild.
             </p>
 
-            {/* <a href="https://tartan-now-jht6-silk.vercel.app/" className="text-link">
+            <a href="https://tartan-now-jht6-silk.vercel.app/" className="text-link">
                 CHECK OUT TARTAN NOW
                 <ArrowUpRight size={18} />
-            </a> */}
+            </a>
           </article>
 
           <article>
@@ -517,10 +517,10 @@ export default function Home() {
               contributions of Tartans across our community.
             </p>
 
-            {/* <a href="#voices" className="text-link">
-                CHECK OUT TARTAN CONNECT
+            <a href="https://tartan-hub.vercel.app/" className="text-link">
+                CHECK OUT TARTAN FORGE
                 <ArrowUpRight size={18} />
-            </a> */}
+            </a>
           </article>
 
           <article>
@@ -535,10 +535,10 @@ export default function Home() {
               are working on, what has changed and what comes next.
             </p>
 
-            {/* <a href="#guild-ledger" className="text-link">
-                CHECK OUT GUILD LEDGER
+            <a href="https://tartan-hub.vercel.app/" className="text-link">
+                CHECK OUT GUILD UPDATES
                 <ArrowUpRight size={18} />
-            </a> */}
+            </a>
           </article>
         </div>
       </section>
